@@ -2,20 +2,24 @@ package urja
 
 import (
 	"bytes"
-	"log"
-	"os/exec"
+	"fmt"
+	"github.com/A9u/urja/internal/pmset"
 )
 
-func GetBatteryStatus() string {
-	cmd := exec.Command("pmset", "-g", "ps")
+func GetBatteryStatus() (status string, err error) {
+	status, err = pmset.BatteryStatus()
 
-	var out bytes.Buffer
-	cmd.Stdout = &out
+	return status, err
+}
 
-	err := cmd.Run()
-	if err != nil {
-		log.Fatal(err)
-	}
+func RunCustomCommand(args ...string) (output bytes.Buffer, err error) {
+	output, err = pmset.ExecuteCustomCommand(args...)
 
-	return out.String()
+	return output, err
+}
+
+func GetHelp() (output bytes.Buffer, err error) {
+	output, err = pmset.ExecuteHelpCommand()
+
+	return output, err
 }
