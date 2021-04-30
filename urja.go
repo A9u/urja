@@ -2,7 +2,6 @@ package urja
 
 import (
 	"bytes"
-	"fmt"
 	"github.com/A9u/urja/internal/pmset"
 )
 
