@@ -1,0 +1,12 @@
+mode: set
+github.com/A9u/urja/internal/pmset/pmset.go:10.56,13.16 2 1
+github.com/A9u/urja/internal/pmset/pmset.go:17.2,17.29 1 1
+github.com/A9u/urja/internal/pmset/pmset.go:13.16,15.3 1 0
+github.com/A9u/urja/internal/pmset/pmset.go:22.76,23.20 1 1
+github.com/A9u/urja/internal/pmset/pmset.go:28.2,29.20 2 1
+github.com/A9u/urja/internal/pmset/pmset.go:23.20,26.3 2 1
+github.com/A9u/urja/internal/pmset/pmset.go:33.60,37.2 2 1
+github.com/A9u/urja/internal/pmset/pmset.go:40.75,44.2 2 1
+github.com/A9u/urja/internal/pmset/pmset.go:47.86,53.16 4 1
+github.com/A9u/urja/internal/pmset/pmset.go:58.2,58.20 1 1
+github.com/A9u/urja/internal/pmset/pmset.go:53.16,56.3 2 1
